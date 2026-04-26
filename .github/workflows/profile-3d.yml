@@ -2,8 +2,8 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: "0 18 * * *" # Runs daily at 18:00 UTC
-  workflow_dispatch: # Allows manual triggering from the Actions tab
+    - cron: "0 18 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,15 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # This action generates the SVG file
       - uses: yoshi389111/github-profile-3d-contrib@0.6.0
-        with:
-          # Replace 'YOUR-USERNAME' with your GitHub username
-          USERNAME: utkarsh-singh-dev
-          # To change the color/look, search the action's repo for more options
-          MAX_COLUMN: 100
-          
-      # This step commits the newly generated SVG file back to the repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - name: Commit & Push
         run: |
           git config user.name github-actions
