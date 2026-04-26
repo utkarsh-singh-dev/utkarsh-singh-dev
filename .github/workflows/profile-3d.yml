@@ -13,10 +13,10 @@ jobs:
       - uses: actions/checkout@v3
 
       # This action generates the SVG file
-      - uses: Utkarsh-singh-dev/github-profile-3d-contrib@0.6.0
+      - uses: yoshi389111/github-profile-3d-contrib@0.6.0
         with:
           # Replace 'YOUR-USERNAME' with your GitHub username
-          USERNAME: Utkarsh-singh-dev
+          USERNAME: utkarsh-singh-dev
           # To change the color/look, search the action's repo for more options
           MAX_COLUMN: 100
           
