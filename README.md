@@ -34,79 +34,78 @@
 
 
 ## 💫 About Me
-I'm a Student and Developer !<br>
-- 🔭 I’m currently working on Quantum DataStructures and Algorithms
-- 🌱 Currently learning Quantum Systems, Rocket Science and Cybersecurity
+I'm a Full Stack Developer !<br>
+- 🔭 Enthusiastic about Quantum DataStructures and Algorithms
+- 🌱 Currently learning Java, AWS, Quantum Systems, Rocket Science and Cybersecurity
 - 🤔 I’m looking for help with new Quantum Algorithms and solutions
 - 💬 Ask me about physics and biology
-- 📫 How to reach me: utkarshsingh2331@gmail.com
 - 😄 Pronouns: microwave
 - 🎅🏻 Contributing to Open Source on a regular basis
 
 
 ## 🌐 Social Links
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/discordapp.com/users/1062079909243134083) 
+[![website](https://img.shields.io/badge/Website-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://utkarsh-a-singh.vercel.app/)](https://utkarsh-a-singh.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/utkarshsinghrajput23) 
+![GitHub followers](https://img.shields.io/github/followers/utkarsh-singh-dev?label=Follow&style=social)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=utkarsh-singh-dev)
+[![Mail Badge](https://img.shields.io/badge/-gmail-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:utkarsh@gmail.com)](mailto:utkarshsingh2331@gmail.com)
+[![Stars](https://img.shields.io/github/stars/utkarsh-singh-dev?color=fefb7b&logo=Undertale)](https://github-readme-stats.vercel.app/api?username=utkarsh-singh-dev&hide_title=false&hide_border=true&show_icons=true&include_all_commits=true&line_height=20&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn)
+[![LeetCode](https://img.shields.io/badge/dynamic/json?style=plastic&labelColor=black&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fatlas_2302/&logo=leetcode&logoColor=yellow)](https://leetcode.com/atlas_2302/)
 
-<a href="https://github.com/Utkarsh-singh-dev?tab=followers">
-<img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/Utkarsh-singh-dev?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/></a>
 
-[![](https://visitcount.itsvg.in/api?id=Utkarsh-singh-dev&icon=6&color=5)](https://visitcount.itsvg.in)
 
-# 💻 Tech Stack:
-![Qiskit](https://img.shields.io/badge/Qiskit-%236929C4.svg?style=for-the-badge&logo=Qiskit&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
-![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) 
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) 
-![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white) 
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) 
-![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) 
-![Node-RED](https://img.shields.io/badge/Node--RED-%238F0000.svg?style=for-the-badge&logo=node-red&logoColor=white) 
-![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) 
-![Three js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white) 
-![InfluxDB](https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=InfluxDB&logoColor=white) 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
-![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) 
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) 
-![GRAFANA](https://img.shields.io/badge/grafana-F46800.svg?style=for-the-badge&logo=grafana&logoColor=white&color=%23F46800) 
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) 
+## 💻 Tech Stack:
+![Qiskit](https://img.shields.io/badge/Qiskit-%236929C4.svg?&logo=Qiskit)
+![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8)
+![Java](https://img.shields.io/badge/Code-Java-informational?&logo=openjdk&logoColor=white&color=6aa6f8)
+[![Shell](https://img.shields.io/static/v1?label=&message=Shell&color=4EAA25&logo=GNU%20Bash&logoColor=FFFFFF)](https://www.gnu.org/)
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?&logo=microsoftazure)
+![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?&logo=anaconda) 
+![Django](https://img.shields.io/badge/django-%23092E20.svg?&logo=django) 
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?&logo=Flutter) 
+![Node-RED](https://img.shields.io/badge/Node--RED-%238F0000.svg?&logo=node-red) 
+![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?&logo=opencv) 
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?&logo=tailwind-css) 
+![Three js](https://img.shields.io/badge/threejs-black?&logo=three.js&logoColor=white) 
+![InfluxDB](https://img.shields.io/badge/InfluxDB-black?style=flat-square&logo=influxdb)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?&logo=mongodb) 
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?&logo=numpy) 
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?&logo=pandas) 
+![Grafana](https://img.shields.io/badge/Grafana-black?style=flat-square&logo=grafana)
+![Docker](https://img.shields.io/badge/Tools-Docker-informational?&logo=docker&color=6aa6f8)
+![Arduino](https://img.shields.io/badge/Arduino-black?style=flat-square&logo=arduino)
+![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi-C51A4A?style=flat-square&logo=Raspberry-Pi)
+![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
+![C](https://img.shields.io/badge/-C-000?&logo=C)
+![Java](https://img.shields.io/badge/-Java-000?&logo=Java&logoColor=007396)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=TypeScript)
+![SQL](https://img.shields.io/badge/-SQL-000?&logo=MySQL)
+![Redis](https://img.shields.io/badge/-Redis-000?&logo=Redis)
+![HTML5](https://img.shields.io/badge/-HTML5-000?&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=css3)
+![AWS](https://img.shields.io/badge/-AWS-000?&logo=Amazon-AWS&logoColor=F90)
+![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
+![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux)
+![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
+![Nextjs](https://img.shields.io/badge/Next.js-000?logo=next.js)
+![PyTorch](https://img.shields.io/badge/-PyTorch-000?&logo=PyTorch)
+![React](https://img.shields.io/badge/-React-000?&logo=React)
+![Redis](https://img.shields.io/badge/-Redis-000?&logo=Redis)
+![Spring](https://img.shields.io/badge/-Spring-000?&logo=Spring)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-000?&logo=TensorFlow)
+<!-- <a href="https://github.com/search?q=user%3ADenverCoder1+language%3Ac"><img alt="C" src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white"></a>
+<a href="https://github.com/search?q=user%3ADenverCoder1+language%3Abash"><img alt="Bash" src="https://img.shields.io/badge/Bash-121011.svg?logo=gnu-bash&logoColor=white"></a> -->
 
-# 📊 GitHub Stats:
+## 📊 GitHub Stats:
 
 
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Utkarsh-singh-dev&theme=blue-green&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Utkarsh-singh-dev&theme=blue-green&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
 
-
-<details>	
- <summary><b>GSSOC(24) Badges </b></summary><br>
-<div style='display:flex; align-items:center; gap: 10px;' align='center'><a href="https://gssoc.girlscript.tech/leaderboard">
-<img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/Postman%20White.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/1.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/2.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/3.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/4.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/5.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/6.png" width="105px" height="105px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/7.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Postman-Challenge/main/docs/assets/8.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Contributor/refs/heads/main/assets/Code%20Luminary.png" width="105px" height="105px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Contributor/refs/heads/main/assets/Git%20Explorer.png" width="100px" height="100px" />
-  <img src="https://raw.githubusercontent.com/GSSoC24/Contributor/refs/heads/main/assets/Pull%20Expert.png" width="100px" height="100px" /></a>
-</div>
-</details>
-
-
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Utkarsh-singh-dev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=utkarsh-singh-dev&theme=nord&column=8)](https://github.com/ryo-ma/github-profile-trophy)
 
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="800" height="400" alt="GitHub 3D Contribution Graph"/>
