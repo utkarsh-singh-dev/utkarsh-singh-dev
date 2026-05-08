@@ -114,6 +114,10 @@ Components
 ## 📊 GitHub Stats:
 
 
+
+![](https://raw.githubusercontent.com/utkarsh-singh-dev/github-stats-transparent/output/generated/overview.svg)
+![](https://raw.githubusercontent.com/utkarsh-singh-dev/github-stats-transparent/output/generated/languages.svg)
+
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Utkarsh-singh-dev&theme=blue-green&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Utkarsh-singh-dev&theme=blue-green&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
 
