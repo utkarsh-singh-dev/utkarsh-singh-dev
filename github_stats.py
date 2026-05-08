@@ -58,7 +58,7 @@ class Queries(object):
         :return: deserialized REST JSON output
         """
 
-        for _ in range(60):
+        for _ in range(200):
             headers = {
                 "Authorization": f"token {self.access_token}",
             }
@@ -74,7 +74,7 @@ class Queries(object):
                 if r.status == 202:
                     # print(f"{path} returned 202. Retrying...")
                     print(f"A path returned 202. Retrying...")
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(5)
                     continue
 
                 result = await r.json()
