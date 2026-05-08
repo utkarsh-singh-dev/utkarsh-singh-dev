@@ -1,0 +1,75 @@
+name: Update Streak Badges
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs daily at midnight UTC
+  push:
+    branches: [main]
+  workflow_dispatch:       # allows manual trigger from Actions tab
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fetch streak data and update Gist
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GITHUB_USERNAME: Utkarsh-singh-dev
+        run: |
+          # Fetch streak stats JSON from demolab
+          RESPONSE=$(curl -s "https://streak-stats.demolab.com/?user=${GITHUB_USERNAME}&type=json")
+
+          CURRENT=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['currentStreak']['length'])" 2>/dev/null || echo "0")
+          LONGEST=$(echo "$RESPONSE"  | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['longestStreak']['length'])" 2>/dev/null || echo "0")
+
+          echo "Current streak: $CURRENT | Longest streak: $LONGEST"
+
+          # Build JSON payloads for both gist files
+          CURRENT_JSON=$(python3 -c "
+          import json
+          print(json.dumps({
+            'schemaVersion': 1,
+            'label': 'Current Streak',
+            'message': '${CURRENT} days',
+            'color': '00b4d8',
+            'style': 'plastic',
+            'namedLogo': 'github',
+            'logoColor': 'white',
+            'labelColor': 'black'
+          }))
+          ")
+
+          LONGEST_JSON=$(python3 -c "
+          import json
+          print(json.dumps({
+            'schemaVersion': 1,
+            'label': 'Longest Streak',
+            'message': '${LONGEST} days',
+            'color': 'ffa116',
+            'style': 'plastic',
+            'namedLogo': 'github',
+            'logoColor': 'white',
+            'labelColor': 'black'
+          }))
+          ")
+
+          # Push both files to the Gist via GitHub API
+          PAYLOAD=$(python3 -c "
+          import json
+          print(json.dumps({
+            'files': {
+              'current_streak.json': {'content': '''${CURRENT_JSON}'''},
+              'longest_streak.json': {'content': '''${LONGEST_JSON}'''}
+            }
+          }))
+          ")
+
+          curl -s -X PATCH \
+            -H "Authorization: token ${GIST_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD" \
+            "https://api.github.com/gists/${GIST_ID}"
+
+          echo "Gist updated successfully!"
