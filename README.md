@@ -41,6 +41,8 @@ I'm a Full Stack Developer @Cognizant <br>
 - 💬 Ask me about physics and biology
 - 😄 Pronouns: microwave
 
+[![Current Streak](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Utkarsh-singh-dev/19891912e6b1e9069e07cf633854a848/raw/current_streak.json)](https://github.com/Utkarsh-singh-dev)
+[![Longest Streak](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Utkarsh-singh-dev/19891912e6b1e9069e07cf633854a848/raw/longest_streak.json)](https://github.com/Utkarsh-singh-dev)
 
 ## 🌐 Social Links
 [![website](https://img.shields.io/badge/Website-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://utkarsh-a-singh.vercel.app/)](https://utkarsh-a-singh.vercel.app/)
@@ -113,14 +115,9 @@ Components
 
 ## 📊 GitHub Stats:
 
-
 ![](https://raw.githubusercontent.com/utkarsh-singh-dev/utkarsh-singh-dev/output/generated/overview.svg) 
 ![](https://raw.githubusercontent.com/utkarsh-singh-dev/utkarsh-singh-dev/output/generated/languages.svg)
 
-[![Current Streak](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Utkarsh-singh-dev/19891912e6b1e9069e07cf633854a848/raw/current_streak.json)](https://github.com/Utkarsh-singh-dev)
-[![Longest Streak](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Utkarsh-singh-dev/19891912e6b1e9069e07cf633854a848/raw/longest_streak.json)](https://github.com/Utkarsh-singh-dev)
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=Utkarsh-singh-dev&theme=blue-green&hide_border=false)<br/>
 
 ## 🏆 GitHub Trophies
 
