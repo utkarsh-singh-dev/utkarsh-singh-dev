@@ -58,7 +58,7 @@ class Queries(object):
         :return: deserialized REST JSON output
         """
 
-        for _ in range(200):
+        for _ in range(10):  # max ~30 seconds per repo
             headers = {
                 "Authorization": f"token {self.access_token}",
             }
@@ -72,9 +72,8 @@ class Queries(object):
                                                headers=headers,
                                                params=tuple(params.items()))
                 if r.status == 202:
-                    # print(f"{path} returned 202. Retrying...")
                     print(f"A path returned 202. Retrying...")
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(3)
                     continue
 
                 result = await r.json()
@@ -83,17 +82,20 @@ class Queries(object):
             except:
                 print("aiohttp failed for rest query")
                 # Fall back on non-async requests
-                async with self.semaphore:
-                    r = requests.get(f"https://api.github.com/{path}",
-                                     headers=headers,
-                                     params=tuple(params.items()))
-                    if r.status_code == 202:
-                        print(f"A path returned 202. Retrying...")
-                        await asyncio.sleep(2)
-                        continue
-                    elif r.status_code == 200:
-                        return r.json()
-        # print(f"There were too many 202s. Data for {path} will be incomplete.")
+                try:
+                    async with self.semaphore:
+                        r = requests.get(f"https://api.github.com/{path}",
+                                         headers=headers,
+                                         params=tuple(params.items()))
+                        if r.status_code == 202:
+                            print(f"A path returned 202. Retrying...")
+                            await asyncio.sleep(3)
+                            continue
+                        elif r.status_code == 200:
+                            return r.json()
+                except Exception as e:
+                    print(f"Fallback request also failed: {e}")
+                    continue
         print("There were too many 202s. Data for this repository will be incomplete.")
         return dict()
 
@@ -247,7 +249,7 @@ class Stats(object):
         self._languages = None
         self._repos = None
         self._lines_changed = None
-        self._views = None        
+        self._views = None
 
     async def to_str(self) -> str:
         """
@@ -279,7 +281,7 @@ Languages:
         self._languages = dict()
         self._repos = set()
         self._ignored_repos = set()
-        
+
         next_owned = None
         next_contrib = None
         while True:
@@ -307,7 +309,7 @@ Languages:
                            .get("data", {})
                            .get("viewer", {})
                            .get("repositories", {}))
-            
+
             repos = owned_repos.get("nodes", [])
             if self._consider_forked_repos:
                 repos += contrib_repos.get("nodes", [])
@@ -351,8 +353,6 @@ Languages:
             else:
                 break
 
-        # TODO: Improve languages to scale by number of contributions to
-        #       specific filetypes
         langs_total = sum([v.get("size", 0) for v in self._languages.values()])
         for k, v in self._languages.items():
             v["prop"] = 100 * (v.get("size", 0) / langs_total)
@@ -422,7 +422,7 @@ Languages:
         await self.get_stats()
         assert(self._repos is not None)
         return self._repos
-    
+
     @property
     async def all_repos(self) -> List[str]:
         """
@@ -469,19 +469,24 @@ Languages:
         additions = 0
         deletions = 0
         for repo in await self.all_repos:
-            r = await self.queries.query_rest(f"/repos/{repo}/stats/contributors")
-            for author_obj in r:
-                # Handle malformed response from the API by skipping this repo
-                if (not isinstance(author_obj, dict)
-                        or not isinstance(author_obj.get("author", {}), dict)):
+            try:
+                r = await self.queries.query_rest(f"/repos/{repo}/stats/contributors")
+                if not r:
                     continue
-                author = author_obj.get("author", {}).get("login", "")
-                if author != self.username:
-                    continue
-
-                for week in author_obj.get("weeks", []):
-                    additions += week.get("a", 0)
-                    deletions += week.get("d", 0)
+                for author_obj in r:
+                    # Handle malformed response from the API by skipping this repo
+                    if (not isinstance(author_obj, dict)
+                            or not isinstance(author_obj.get("author", {}), dict)):
+                        continue
+                    author = author_obj.get("author", {}).get("login", "")
+                    if author != self.username:
+                        continue
+                    for week in author_obj.get("weeks", []):
+                        additions += week.get("a", 0)
+                        deletions += week.get("d", 0)
+            except Exception as e:
+                print(f"Could not get stats for {repo}: {e}")
+                continue
 
         self._lines_changed = (additions, deletions)
         return self._lines_changed
@@ -497,9 +502,13 @@ Languages:
 
         total = 0
         for repo in await self.repos:
-            r = await self.queries.query_rest(f"/repos/{repo}/traffic/views")
-            for view in r.get("views", []):
-                total += view.get("count", 0)
+            try:
+                r = await self.queries.query_rest(f"/repos/{repo}/traffic/views")
+                for view in r.get("views", []):
+                    total += view.get("count", 0)
+            except Exception as e:
+                print(f"Could not get views for {repo}: {e}")
+                continue
 
         self._views = total
         return total
