@@ -117,6 +117,9 @@ Components
 ![](https://raw.githubusercontent.com/utkarsh-singh-dev/utkarsh-singh-dev/output/generated/overview.svg) 
 ![](https://raw.githubusercontent.com/utkarsh-singh-dev/utkarsh-singh-dev/output/generated/languages.svg)
 
+[![Current Streak](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Utkarsh-singh-dev/19891912e6b1e9069e07cf633854a848/raw/current_streak.json)](https://github.com/Utkarsh-singh-dev)
+[![Longest Streak](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Utkarsh-singh-dev/19891912e6b1e9069e07cf633854a848/raw/longest_streak.json)](https://github.com/Utkarsh-singh-dev)
+
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Utkarsh-singh-dev&theme=blue-green&hide_border=false)<br/>
 
 ## 🏆 GitHub Trophies
